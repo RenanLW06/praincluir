@@ -21,7 +21,8 @@ python manage.py createsuperuser        # o primeiro usuário já nasce administ
 python manage.py runserver
 ```
 
-Testes das planilhas (não precisam de banco): `python -m unittest core.tests.test_planilhas`
+Testes automatizados (com o banco ligado): `python manage.py test`
+Só os que não precisam de banco: `python -m unittest core.tests.test_planilhas core.tests.test_calendario`
 
 ## Autenticação
 
